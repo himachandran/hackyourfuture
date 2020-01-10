@@ -1,134 +1,182 @@
 <html>
 
 <head>
-    <style>
-        #header {
-            background-color: rgb(5, 63, 15);
-            color: crimson;
-            border-style: visibility hidden;
-            height: 10%;
-        }
+  <style>
+    #header {
+      background-color: rgb(5, 63, 15);
+      color: crimson;
+      height: 10%;
+    }
 
-        #footer {
-            background-color: black;
-            max-height: 5%;
-            color: burlywood;
-            margin-top: auto;
-            clear: both;
-        }
+    #footer {
+      background-color: black;
+      max-height: 5%;
+      color: burlywood;
+      margin-top: auto;
+      clear: both;
+    }
 
-        #main_menu {
+    #main_menu {
+      width: 70%;
+      margin: 25px 25px 25px 260px;
+      height: auto;
+    }
 
-            width: 70%;
-            margin:25px 25px 25px 260px;
-            height: auto;
+    #side_bar {
+      float: left;
+      width: 20%;
+      height: 1077px;
+      background-color: rgb(162, 204, 169)
+    }
 
-        }
+    .header_names a {
+      text-decoration: none;
+    }
 
-        #side_bar {
-            float: left;
-            width: 20%;
-            height: 1077px;
-            background-color: rgb(162, 204, 169)
-        }
+    .header_names {
+      padding: 2px 5px 2px 5px;
+      background-color: darkgreen;
+      color: darkorange;
+      border: forestgreen solid;
+      height: 20px;
+    }
 
-        .header_names {
-            padding: 2px 5px 2px 5px;
-        }
+    .header_names a:hover {
+      background-color: #ddd;
+      color: black;
+    }
 
-        .product-info {
-            display: grid;
-            grid-column-gap: 50px;
-            grid-template-columns: auto auto auto;
-            border-width: 1px;
-            
-        }
+    .header_names a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
 
-        .img-dimension {
-            width: 150px;
-            height: 150px;
-            
-        }
+    .product-info {
+      display: grid;
+      grid-column-gap: 50px;
+      grid-template-columns: auto auto auto;
+      border-width: 1px;
+    }
 
-        .grid_img {
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            width: 300px;
-            height: 220px;
-            overflow-y: auto;
-            overflow-x: auto;
-            
-        }
-        .fullpage{
-            width: 300px;
-            
-        }
-    </style>
+    .img-dimension {
+      width: 150px;
+      height: 150px;
+    }
+
+    .grid_img {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      overflow: hidden;
+      box-shadow: 10px 10px 5px grey;
+    }
+
+    .fullpage {
+      width: 300px;
+    }
+  </style>
 </head>
 
 <body>
-<div id="fullpage">
-    <div><header id="header">
+  <div id="fullpage">
+    <div>
+      <header id="header">
         <h1 style="width: 100%; text-align: center; font-size: x-larger; padding-top: 10px;">Hima's Kitchen</h1>
-    </header>
-</div>
-    <div style="background-color: darkgreen; color: darkorange; border: forestgreen solid; height: 20px;">
-        <span class="header_names">Recipes</span>
-        <span class="header_names">About Us</span>
-        <span class="header_names"> Contact</span>
+      </header>
+    </div>
+    <div class="header_names">
+      <a class="active" href="#">Recipes</a>
+      <a href="#">About Me</a>
+      <a href="#">Contact</a>
     </div>
 
     <div id="side_bar">
-        <h2>Non-Veg</h2>
-        <ul>
-            <li><a href="#butter-chicken">Butter Chicken</a></li>
-            <li><a href="#mutton-korma">Mutton Korma</a></li>
-        </ul>
-        <h2>Veg</h2>
-        <ul>
-            <li><a href="#mixveg-masala">Mix Veg Masala</a></li>
-            <li><a href="#veg-korma">Veg Korma</a></li>
-        </ul>
-        <h2>Keto</h2>
-        <ul>
-            <li><a href="#cauliflower-rice">Cauliflower Rice</a></li>
-            <li><a href="#badam-flour-bread">Badam Flour Bread</a></li>
-        </ul>
+      <h2>Non-Vegetarian</h2>
+      <ul>
+        <li><a href="#butter-chicken">Butter Chicken</a></li>
+        <li><a href="#mutton-korma">Mutton Korma</a></li>
+      </ul>
+      <h2>Vegetarian</h2>
+      <ul>
+        <li><a href="#mixveg-masala">Mix Veg Masala</a></li>
+        <li><a href="#veg-korma">Veg Korma</a></li>
+      </ul>
+      <h2>Keto</h2>
+      <ul>
+        <li><a href="#cauliflower-rice">Cauliflower Rice</a></li>
+        <li><a href="#badam-flour-bread">Badam Flour Bread</a></li>
+      </ul>
     </div>
 
     <div id="main_menu">
-        <h1 id="veg">Vegetarian </h1>
-        <div class="product-info">
-            <div class=grid_img><h4>Mix Veg Masala</h4><img src="https://imgur.com/t/mixed_vegetable_curry/jRGCgMm.jpg" class="img-dimension">Mix veg curry is made
-                by cooking a mixture of vegetables together in a traditional Indian onion-tomato gravy. The dish is
-                characterized by multiple flavors due to the addition of many vegetables which also makes it quite
-                nutritious.<p><a href="https://vegecravings.com/mix-veg-curry-recipe/">Read more</a></p>
+      <h1 id="veg">Vegetarian </h1>
+      <div class="product-info">
+        <div class=grid_img>
+          <h4>Mix Veg Masala</h4>
+          <img src="https://image.shutterstock.com/image-photo/curry-chicken-600w-225642772.jpg" class="img-dimension">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet venenatis augue. Donec venenatis lectus nec auctor elementum. Phasellus mollis tellus nunc, nec iaculis massa semper ac. Sed purus justo, dapibus non porttitor ut, luctus quis libero. Nullam feugiat massa erat, ut gravida ex condimentum ac. Duis pretium elementum tortor, eu tempor dui. Praesent eu justo et tellus cursus dapibus. Praesent dictum lorem at lectus vestibulum, aliquam aliquet velit pulvinar. Aenean ac sem quis tortor vestibulum tempus non non sapien. Praesent iaculis nunc quis magna pellentesque accumsan. Vestibulum molestie tortor gravida dictum venenatis. Donec volutpat mollis erat. Morbi et tristique turpis, a faucibus nisi. Sed nec euismod ipsum. Duis non porta est.            
+          </p>
+          <p>
+            <a href="#">Read more</a>
+          </p>
+        </div>
+        <div class=grid_img>
+          <h4 id="veg-korma">Veg Korma</h4>
+          <img src="https://image.shutterstock.com/image-photo/thai-food-green-curry-chicken-600w-614654369.jpg" class="img-dimension">
+          <p>
+            Duis consectetur auctor viverra. Curabitur venenatis, libero at euismod pulvinar, dolor tellus congue est, sit amet condimentum lacus mi non felis. Donec et nunc id dolor volutpat semper ac ac enim. In eget pulvinar ante. Aenean et mi mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris commodo mauris maximus augue ullamcorper rhoncus. Suspendisse potenti. In id ligula lobortis, sodales urna id, suscipit sapien. Donec ut erat id erat tempor iaculis. Cras ullamcorper, quam nec interdum finibus, turpis metus fermentum ante, in hendrerit nulla orci vitae est.
+          </p>
+          <p><a href="#">Read more</a></p>
+        </div>
+      </div>
+      <h1 id="nonveg">Non-Vegetarian</h1>
+      <div class="product-info">
+        <div class=grid_img>
+          <h4 id="butter-chicken">Butter chicken</h4>
+          <img src="https://image.shutterstock.com/image-photo/butter-chicken-curry-murgh-makhani-600w-610126394.jpg" class="img-dimension">
+          <p>
+            Mauris ligula tellus, efficitur non tempus non, malesuada ut nunc. Phasellus euismod orci vitae volutpat venenatis. Nulla at lacinia mi. Curabitur sit amet hendrerit lacus, non imperdiet sapien. Quisque nec magna id lectus mattis dictum. Sed congue blandit lectus in blandit. Vivamus fermentum mi eu urna cursus, blandit venenatis magna convallis. Nam et sem sed mi consequat ultricies. Nulla facilisi. Pellentesque sit amet venenatis odio. Aliquam finibus aliquet quam, sit amet consequat odio. Curabitur venenatis efficitur egestas. Phasellus nisl dui, ultrices ut neque quis, blandit commodo turpis. Nam ornare eget neque et ullamcorper.
+          </p>
+          <p><a href="#">Read more</a></p>
+        </div>
+        <div class=grid_img>
+          <h4 id="mutton-korma">Mutton korma</h4>
+          <img src="https://image.shutterstock.com/image-photo/chicken-tikka-masala-spicy-curry-600w-568611577.jpg" class="img-dimension">
+          <p>
+            Ut lorem velit, tincidunt et tortor sed, vulputate mattis nisl. Curabitur porta venenatis egestas. Sed elit magna, sagittis quis dui eu, efficitur sollicitudin enim. Pellentesque ultrices vestibulum sapien, a semper turpis facilisis sed. In finibus tincidunt massa id condimentum. Nulla gravida sapien quis facilisis varius. Etiam at lobortis ante, eu efficitur massa. Proin consectetur elit id ante congue sagittis.
+          </p>
+          <p><a href="#">Read more</a></p>
+        </div>
+      </div>
 
-                </div>
-            <div class=grid_img><h4 id="veg-korma">Veg Korma</h4><img src="https://i.imgur.com/sMxrqUw.jpg" class="img-dimension">veg kurma recipe with step by step photos. delicious south indian style kurma recipe made with mixed veggies, coconut and spices. korma or kurma is a gravy based dish and is served with chapatis, pooris or steamed rice. there are different ways of making a kurma gravy. 
-                Usually the gravy base is made from ground coconut paste or coconut milk or curd or nuts & seeds paste.
-                <p><a href="https://www.vegrecipesofindia.com/hotel-style-veg-kurma-recipe/">Read more</a></p>
-            </div>
+      <h1 id="keto">Keto</h1>
+      <div class="product-info">
+        <div class=grid_img>
+          <h4 id="cauliflower-rice">Cauliflower Rice</h4>
+          <img src="https://image.shutterstock.com/image-photo/cauliflower-rice-ketogenic-paleo-food-600w-1426519394.jpg" class="img-dimension">
+          <p>
+            Vestibulum magna risus, porta sed lorem id, lobortis dictum orci. Integer vitae magna leo. Donec augue orci, consequat eget ipsum at, condimentum vestibulum velit. Nunc pretium lacus sed ex varius, non volutpat lorem semper. Maecenas faucibus ex id ipsum pulvinar, vel malesuada dui venenatis. Proin eu semper nulla. Sed id mauris malesuada, consequat mauris in, iaculis massa. Aliquam blandit mi ut odio auctor volutpat. Pellentesque augue odio, tincidunt non enim nec, molestie molestie ipsum. Curabitur finibus eget purus non egestas. Phasellus molestie urna quis diam imperdiet consectetur. Nunc at pulvinar lorem. Suspendisse volutpat aliquet venenatis. Aliquam hendrerit nulla nisi, a auctor augue interdum sit amet.
+          </p>
+          <p><a href="#">Read more</a></p>
         </div>
-        <h1 id="nonveg">Non-Vegetarian</h1>
-        <div class="product-info">
-            <div class=grid_img><h4 id="butter-chicken">Butter chicken</h4><img src="" class="img-dimension"></div>
-            <div class=grid_img><h4 id="mutton-korma">Mutton korma</h4><img src="" class="img-dimension"></div>
+        <div class=grid_img>
+          <h4 id="badam-flour-bread">Badam Flour Bread</h4>
+          <img src="https://image.shutterstock.com/image-photo/freshly-baked-sliced-banting-seed-600w-486996460.jpg" class="img-dimension">
+          <p>
+            Phasellus posuere porttitor nisi, id viverra nulla dapibus at. Etiam et efficitur ligula. Ut vehicula erat eget erat sollicitudin, vel dapibus tortor tristique. Nulla facilisi. Suspendisse pharetra iaculis laoreet. Maecenas eget orci eget turpis ultrices ullamcorper non at ex. Donec rutrum a diam quis tristique. In quis ligula ut eros ullamcorper ultrices. Duis eget ullamcorper augue, maximus mattis ante. Nulla a tempor ex. Nullam ultricies viverra neque, at auctor justo aliquet vitae.
+          </p>
+          <p><a href="#">Read more</a></p>
         </div>
-    
-    <h1 id="keto">Keto</h1>
-    <div class="product-info">
-        <div class=grid_img><h4 id="cauliflower-rice">Cauliflower Rice</h4><img src="" class="img-dimension"></div>
-        <div class=grid_img><h4 id="badam-flour-bread">Badam Flour Bread</h4><img src="" class="img-dimension"></div>
+
+      </div>
 
     </div>
+  </div>
 
-    </div>
-</div>
+  <footer id="footer">
+    <p>© Copyright 2020</p>
+  </footer>
+
 </body>
-
-<footer id="footer">
-    <p> Copyright 2020</p>
-</footer>
 
 </html>
