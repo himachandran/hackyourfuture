@@ -1,82 +1,134 @@
 <html>
-    <head>
-        <style>
-            #header_menu
-            {
-                background-color: cornflowerblue;
-                color: crimson;
-                border-style: dotted;
-                height: 25%;
-            }
-            #footer{
-                background-color: black;
-                max-height:5%;
-                color: burlywood;
-                
-            }
-            #main_menu{
-                float:right;
-                width:70%;
-            }
-            #side_bar{
-                float: left;
-                width:30%;
-            }
-        </style>
-    </head>
-    
 
-    <body>
-        
-        <header id="header_menu"> 
-            <img src=""  width=100%>
-            <table>
-                <thead id="menu_bar">
-                    <tr>
-                        <th><a href="#veg">Veg</a></th>
-                        <th>Non-Veg</th>
-                        <th>Keto</th>
-                        <th>Vegan</th>
-                    </tr>
-                </thead>
-            </table>
-        </header>
+<head>
+    <style>
+        #header {
+            background-color: rgb(5, 63, 15);
+            color: crimson;
+            border-style: visibility hidden;
+            height: 10%;
+        }
 
-        <div id="side_bar">
-        <p>Non-Veg</p>     
-        <ul>
-            <li>Butter Chicken</li>
-            <li>Chicken Korma</li>
-        </ul>
-        </div>
-        <div id="main_menu">
-        <p id="veg">Vegetarian 
-            <img src="">
-            <img src="">
-            <img src="">
-         
-        </p>
-        <p id="nonveg"> Non-Vegetarian
-            <img src="">
-            <img src="">
-            <img src="">
-        </p>
-        <p id="keto">Keto
-            <img src="">
-            <img src="">
-            <img src="">
-        </p>
-        <p id="vegan">Vegan
-            <img src="">
-            <img src="">
-            <img src="">
-        </p>
+        #footer {
+            background-color: black;
+            max-height: 5%;
+            color: burlywood;
+            margin-top: auto;
+            clear: both;
+        }
+
+        #main_menu {
+
+            width: 70%;
+            margin:25px 25px 25px 260px;
+            height: auto;
+
+        }
+
+        #side_bar {
+            float: left;
+            width: 20%;
+            height: 1077px;
+            background-color: rgb(162, 204, 169)
+        }
+
+        .header_names {
+            padding: 2px 5px 2px 5px;
+        }
+
+        .product-info {
+            display: grid;
+            grid-column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            border-width: 1px;
+            
+        }
+
+        .img-dimension {
+            width: 150px;
+            height: 150px;
+            
+        }
+
+        .grid_img {
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            width: 300px;
+            height: 220px;
+            overflow-y: auto;
+            overflow-x: auto;
+            
+        }
+        .fullpage{
+            width: 300px;
+            
+        }
+    </style>
+</head>
+
+<body>
+<div id="fullpage">
+    <div><header id="header">
+        <h1 style="width: 100%; text-align: center; font-size: x-larger; padding-top: 10px;">Hima's Kitchen</h1>
+    </header>
+</div>
+    <div style="background-color: darkgreen; color: darkorange; border: forestgreen solid; height: 20px;">
+        <span class="header_names">Recipes</span>
+        <span class="header_names">About Us</span>
+        <span class="header_names"> Contact</span>
     </div>
-        
-    </body>
 
-    <footer id="footer">
-        <p> Copyright 2020</p>
-    </footer>
+    <div id="side_bar">
+        <h2>Non-Veg</h2>
+        <ul>
+            <li><a href="#butter-chicken">Butter Chicken</a></li>
+            <li><a href="#mutton-korma">Mutton Korma</a></li>
+        </ul>
+        <h2>Veg</h2>
+        <ul>
+            <li><a href="#mixveg-masala">Mix Veg Masala</a></li>
+            <li><a href="#veg-korma">Veg Korma</a></li>
+        </ul>
+        <h2>Keto</h2>
+        <ul>
+            <li><a href="#cauliflower-rice">Cauliflower Rice</a></li>
+            <li><a href="#badam-flour-bread">Badam Flour Bread</a></li>
+        </ul>
+    </div>
+
+    <div id="main_menu">
+        <h1 id="veg">Vegetarian </h1>
+        <div class="product-info">
+            <div class=grid_img><h4>Mix Veg Masala</h4><img src="https://imgur.com/t/mixed_vegetable_curry/jRGCgMm.jpg" class="img-dimension">Mix veg curry is made
+                by cooking a mixture of vegetables together in a traditional Indian onion-tomato gravy. The dish is
+                characterized by multiple flavors due to the addition of many vegetables which also makes it quite
+                nutritious.<p><a href="https://vegecravings.com/mix-veg-curry-recipe/">Read more</a></p>
+
+                </div>
+            <div class=grid_img><h4 id="veg-korma">Veg Korma</h4><img src="https://i.imgur.com/sMxrqUw.jpg" class="img-dimension">veg kurma recipe with step by step photos. delicious south indian style kurma recipe made with mixed veggies, coconut and spices. korma or kurma is a gravy based dish and is served with chapatis, pooris or steamed rice. there are different ways of making a kurma gravy. 
+                Usually the gravy base is made from ground coconut paste or coconut milk or curd or nuts & seeds paste.
+                <p><a href="https://www.vegrecipesofindia.com/hotel-style-veg-kurma-recipe/">Read more</a></p>
+            </div>
+        </div>
+        <h1 id="nonveg">Non-Vegetarian</h1>
+        <div class="product-info">
+            <div class=grid_img><h4 id="butter-chicken">Butter chicken</h4><img src="" class="img-dimension"></div>
+            <div class=grid_img><h4 id="mutton-korma">Mutton korma</h4><img src="" class="img-dimension"></div>
+        </div>
     
+    <h1 id="keto">Keto</h1>
+    <div class="product-info">
+        <div class=grid_img><h4 id="cauliflower-rice">Cauliflower Rice</h4><img src="" class="img-dimension"></div>
+        <div class=grid_img><h4 id="badam-flour-bread">Badam Flour Bread</h4><img src="" class="img-dimension"></div>
+
+    </div>
+
+    </div>
+</div>
+</body>
+
+<footer id="footer">
+    <p> Copyright 2020</p>
+</footer>
+
 </html>
